@@ -11,7 +11,12 @@
     "test": "node --experimental-vm-modules node_modules/.bin/jest",
     "test:watch": "node --experimental-vm-modules node_modules/.bin/jest --watch"
   },
-  "keywords": ["security", "vscode", "extensions", "supply-chain"],
+  "keywords": [
+    "security",
+    "vscode",
+    "extensions",
+    "supply-chain"
+  ],
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/jest": "^29.5.12",
@@ -22,11 +27,14 @@
     "typescript": "^5.5.2"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.24.0"
+    "@anthropic-ai/sdk": "^0.24.0",
+    "dotenv": "^17.4.2"
   },
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.ts"]
+    "testMatch": [
+      "**/tests/**/*.test.ts"
+    ]
   }
 }
