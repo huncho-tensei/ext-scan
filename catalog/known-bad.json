@@ -1,0 +1,38 @@
+[
+  {
+    "ecosystem": "vscode",
+    "id": "solidity-lang.solidity",
+    "severity": "critical",
+    "description": "Fake Solidity extension — installed remote access trojan and infostealer. $500K crypto theft reported.",
+    "reference": "https://www.bleepingcomputer.com/news/security/malicious-vscode-extension-in-cursor-ide-led-to-500k-crypto-theft/"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "piithon.piithon-linter",
+    "severity": "critical",
+    "description": "Typosquat of Python linter — exfiltrated credentials via postinstall.",
+    "reference": "https://mazinahmed.net/blog/publishing-malicious-vscode-extensions/"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "glassworm.glassworm-theme",
+    "severity": "critical",
+    "description": "GlassWorm v2 dropper — Zig-based native malware delivered via fake theme extension.",
+    "reference": "https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "teampcp.team-utils",
+    "severity": "critical",
+    "description": "TeamPCP supply chain attack — exfiltrated 3,800 GitHub internal repos.",
+    "reference": "https://corgea.com/research/github-breach-vscode-extension-supply-chain-may-2026"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "nrwl.nx-console",
+    "versions": ["18.95.0"],
+    "severity": "critical",
+    "description": "Nx Console 18.95.0 shipped credential stealer in compromised publish.",
+    "reference": "https://corgea.com/research/nx-console-vscode-extension-credential-stealer-may-2026"
+  }
+]
