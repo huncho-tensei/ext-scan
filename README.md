@@ -1,5 +1,7 @@
 # ext-scan
 
+[![CI](https://github.com/huncho-tensei/ext-scan/actions/workflows/ci.yml/badge.svg)](https://github.com/huncho-tensei/ext-scan/actions/workflows/ci.yml)
+
 Local security scanner for VS Code and Cursor extensions. Checks what's already installed on your machine against known-compromised packages, suspicious code patterns, and optionally runs an AI deep analysis.
 
 ## Why
