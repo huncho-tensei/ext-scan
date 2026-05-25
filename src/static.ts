@@ -34,13 +34,13 @@ export const RULES: Rule[] = [
   {
     id: "network-ip",
     severity: "high",
-    pattern: /['"`]https?:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/,
+    pattern: /['"`]https?:\/\/(?!127\.0\.0\.1|0\.0\.0\.0|localhost)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}/,
     message: "Network request to raw IP address — common exfiltration pattern",
   },
   {
     id: "sensitive-file-read",
     severity: "high",
-    pattern: /\.(ssh|gnupg|aws|netrc|npmrc|docker)\b|id_rsa|id_ed25519|\.env\b|credentials/,
+    pattern: /[\/\\]\.ssh[\/\\]|[\/\\]\.gnupg[\/\\]|[\/\\]\.aws[\/\\]|[\/\\]\.netrc\b|[\/\\]\.npmrc\b|[\/\\]\.docker[\/\\]|id_rsa\b|id_ed25519\b|[\/\\]\.env\b|[\/\\]credentials\b/,
     message: "References sensitive file paths — may read keys, tokens, or credentials",
   },
   {
@@ -62,6 +62,12 @@ export const RULES: Rule[] = [
     message: "Reads clipboard contents — may harvest copied credentials or keys",
   },
 ];
+
+const TRUSTED_PUBLISHERS = new Set([
+  "ms-python", "ms-vscode", "vscjava", "redhat",
+  "github", "microsoft", "visualstudioexptteam",
+  "anthropic", "dbaeumer", "esbenp",
+]);
 
 const SKIP_DIRS = new Set(["node_modules", ".git", ".vscode"]);
 const SCAN_EXTENSIONS = new Set([".js", ".ts", ".mjs", ".cjs"]);
@@ -97,6 +103,7 @@ function collectFiles(dir: string): string[] {
 export async function analyzeExtension(ext: ExtensionInfo): Promise<Finding[]> {
   const findings: Finding[] = [];
   const files = collectFiles(ext.path);
+  const trusted = TRUSTED_PUBLISHERS.has(ext.publisher);
 
   for (const filePath of files) {
     let stat: fs.Stats;
@@ -122,9 +129,11 @@ export async function analyzeExtension(ext: ExtensionInfo): Promise<Finding[]> {
           findings.push({
             extensionId: ext.id,
             layer: "static",
-            severity: rule.severity,
+            severity: trusted ? "info" : rule.severity,
             rule: rule.id,
-            message: rule.message,
+            message: trusted
+              ? `[trusted publisher] ${rule.message}`
+              : rule.message,
             file: path.relative(ext.path, filePath),
             line: i + 1,
           });

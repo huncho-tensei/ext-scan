@@ -133,4 +133,30 @@ describe("analyzeExtension", () => {
     const findings = await analyzeExtension(extAt(dir));
     expect(findings.find((f) => f.rule === "eval-usage")).toBeUndefined();
   });
+
+  // These tests verify trusted publisher downgrade behavior.
+  // The eval() strings are test fixture data for the scanner to detect, not executed code.
+  it("downgrades trusted publisher findings to info", async () => {
+    const dir = createTempExtension({
+      "out/main.js": `eval(payload);`,
+    });
+    const ext = extAt(dir);
+    ext.publisher = "ms-python";
+    const findings = await analyzeExtension(ext);
+    const match = findings.find((f) => f.rule === "eval-usage");
+    expect(match).toBeDefined();
+    expect(match!.severity).toBe("info");
+  });
+
+  it("keeps severity for untrusted publishers", async () => {
+    const dir = createTempExtension({
+      "out/main.js": `eval(payload);`,
+    });
+    const ext = extAt(dir);
+    ext.publisher = "random-unknown-dev";
+    const findings = await analyzeExtension(ext);
+    const match = findings.find((f) => f.rule === "eval-usage");
+    expect(match).toBeDefined();
+    expect(match!.severity).toBe("high");
+  });
 });
