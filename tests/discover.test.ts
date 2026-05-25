@@ -4,7 +4,12 @@ import * as path from "path";
 import * as fs from "fs";
 import * as os from "os";
 
-describe("getExtensionDirs", () => {
+const hasVscode = fs.existsSync(
+  path.join(os.homedir(), ".vscode", "extensions")
+);
+const describeLocal = hasVscode ? describe : describe.skip;
+
+describeLocal("getExtensionDirs (requires local VS Code)", () => {
   it("returns vscode dir when it exists", () => {
     const dirs = getExtensionDirs();
     const vscodeDir = dirs.find((d) => d.editor === "vscode");
@@ -20,7 +25,7 @@ describe("getExtensionDirs", () => {
   });
 });
 
-describe("discoverExtensions", () => {
+describeLocal("discoverExtensions (requires local VS Code)", () => {
   it("finds installed vscode extensions", async () => {
     const extensions = await discoverExtensions();
     expect(extensions.length).toBeGreaterThan(0);
@@ -54,5 +59,26 @@ describe("discoverExtensions", () => {
       const pkgPath = path.join(ext.path, "package.json");
       expect(fs.existsSync(pkgPath)).toBe(true);
     }
+  });
+});
+
+describe("getExtensionDirs (portable)", () => {
+  it("returns an array", () => {
+    const dirs = getExtensionDirs();
+    expect(Array.isArray(dirs)).toBe(true);
+  });
+
+  it("only returns dirs that exist", () => {
+    const dirs = getExtensionDirs();
+    for (const dir of dirs) {
+      expect(fs.existsSync(dir.path)).toBe(true);
+    }
+  });
+});
+
+describe("discoverExtensions (portable)", () => {
+  it("returns an array even with no editors installed", async () => {
+    const extensions = await discoverExtensions();
+    expect(Array.isArray(extensions)).toBe(true);
   });
 });
