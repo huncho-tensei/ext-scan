@@ -31,12 +31,16 @@ Options:
     process.exit(0);
   }
 
+  if (deepScan && !process.env.ANTHROPIC_API_KEY) {
+    console.error("Error: --deep requires ANTHROPIC_API_KEY to be set.");
+    process.exit(1);
+  }
+
   if (verbose) console.error("Discovering extensions...");
   const extensions = await discoverExtensions();
 
-  if (extensions.length === 0) {
+  if (extensions.length === 0 && verbose) {
     console.error("No extensions found.");
-    process.exit(0);
   }
 
   if (verbose) console.error(`Found ${extensions.length} extensions.`);
@@ -56,10 +60,6 @@ Options:
   }
 
   if (deepScan) {
-    if (!process.env.ANTHROPIC_API_KEY) {
-      console.error("Error: --deep requires ANTHROPIC_API_KEY to be set.");
-      process.exit(1);
-    }
     const untrusted = extensions.filter(
       (e) => findings.some((f) => f.extensionId === e.id && f.severity !== "info")
     );
