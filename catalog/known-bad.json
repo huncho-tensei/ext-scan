@@ -15,13 +15,6 @@
   },
   {
     "ecosystem": "vscode",
-    "id": "glassworm.glassworm-theme",
-    "severity": "critical",
-    "description": "GlassWorm v2 dropper — Zig-based native malware delivered via fake theme extension.",
-    "reference": "https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html"
-  },
-  {
-    "ecosystem": "vscode",
     "id": "teampcp.team-utils",
     "severity": "critical",
     "description": "TeamPCP supply chain attack — exfiltrated 3,800 GitHub internal repos.",
@@ -34,5 +27,516 @@
     "severity": "critical",
     "description": "Nx Console 18.95.0 shipped credential stealer in compromised publish.",
     "reference": "https://corgea.com/research/nx-console-vscode-extension-credential-stealer-may-2026"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "publishingsofficial.prettier-vscode-plus",
+    "severity": "critical",
+    "description": "Fake Prettier extension — deployed Anivia Stealer + OctoRAT via multi-stage attack chain.",
+    "reference": "https://hackread.com/prettier-extension-vscode-marketplace-anivia-stealer/"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "aadarkcode.one-dark-material",
+    "severity": "critical",
+    "description": "GlassWorm v2 — cloned theme extension with hidden Solana C2 malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "aligntool.extension-align-professional-tool",
+    "severity": "critical",
+    "description": "GlassWorm v2 — cloned utility with invisible Unicode malware payload.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "angular-studio.ng-angular-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Angular extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "awesome-codebase.codebase-dart-pro",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Dart extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "awesomeco.wonder-for-vscode-icons",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake icon theme with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "bhbpbarn.vsce-python-indent-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Python indent extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "blockstoks.easily-gitignore-manage",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake gitignore manager with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "brategmaqendaalar-studio.pro-prettyxml-formatter",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake XML formatter with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "codbroks.compile-runnner-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake code runner with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "codevunmis.csv-sql-tsv-rainbow",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake CSV/SQL viewer with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "codwayexten.code-way-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake utility with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "cosmic-themes.sql-formatter",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake SQL formatter with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "craz2team.vscode-todo-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake TODO extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "crotoapp.vscode-xml-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake XML extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "cudra-production.vsce-prettier-pro",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Prettier clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "daeumer-web.es-linter-for-vs-code",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake ESLint clone (typosquat of dbaeumer) with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "dark-code-studio.flutter-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Flutter extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "densy-little-studio.wonder-for-vscode-icons",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake icon theme with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "dep-labs-studio.dep-proffesinal-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake utility with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "dev-studio-sense.php-comp-tools-vscode",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake PHP tools with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "devmidu-studio.svg-better-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake SVG extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "dopbop-studio.vscode-tailwindcss-extension-toolkit",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Tailwind CSS toolkit with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "errlenscre.error-lens-finder-ex",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Error Lens clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "exss-studio.yaml-professional-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake YAML extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "federicanc.dotenv-syntax-highlighting",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake dotenv highlighter with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "flutxvs.vscode-kuberntes-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Kubernetes extension (typosquat) with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "gvotcha.claude-code-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Claude Code extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "gvotcha.claude-code-extensions",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Claude Code extension (plural variant) with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "intellipro.extension-json-intelligence",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake JSON intelligence tool with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "kharizma.vscode-extension-wakatime",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake WakaTime clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "ko-zu-gun-studio.synchronization-settings-vscode",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Settings Sync clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "kwitch-studio.auto-run-command-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake auto-run command extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "lavender-studio.theme-lavender-dreams",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake theme with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "littensy-studio.magical-icons",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake icon pack with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "lyu-wen-studio-web-han.better-formatter-vscode",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake formatter with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "markvalid.vscode-mdvalidator-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake markdown validator with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "mecreation-studio.pyrefly-pro-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Python tool with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "mswincx.antigravity-cockpit",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Google Antigravity clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "mswincx.antigravity-cockpit-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Google Antigravity clone (variant) with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "namopins.prettier-pro-vscode-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Prettier clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "oigotm.my-command-palette-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake command palette tool with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "otoboss.autoimport-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake auto-import extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "ovixcode.vscode-better-comments",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Better Comments clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "pessa07tm.my-js-ts-auto-commands",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake JS/TS auto commands with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "potstok.dotnet-runtime-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake .NET runtime extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "pretty-studio-advisor.prettyxml-formatter",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake XML formatter with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "prismapp.prisma-vs-code-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Prisma extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "projmanager.your-project-manager-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Project Manager clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "pubruncode.ccoderunner",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Code Runner clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "pyflowpyr.py-flowpyright-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Pyright clone (typosquat) with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "pyscopexte.pyscope-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Python scope tool with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "redcapcollective.vscode-quarkus-elite-suite",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Quarkus suite with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "rubyideext.ruby-ide-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Ruby IDE extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "runnerpost.runner-your-code",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake code runner with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "shinypy.shiny-extension-for-vscode",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Shiny extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "sol-studio.solidity-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Solidity extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "ssgwysc.volar-vscode",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Vue Volar clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "studio-jjalaire-team.professional-quarto-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Quarto extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "studio-velte-distributor.pro-svelte-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Svelte extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "sun-shine-studio.shiny-extension-for-vscode",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Shiny extension (variant) with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "sxatvo.jinja-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Jinja extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "tamokill12.foundry-pdf-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake PDF extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "thing-mn.your-flow-extension-for-icons",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake icon flow extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "tima-web-wang.shell-check-utils",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake ShellCheck clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "tokcodes.import-cost-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Import Cost clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "toowespace.worksets-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake workspace manager with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "treedotree.tree-do-todoextension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake TODO tree clone with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "tucyzirille-studio.angular-pro-tools-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Angular tools with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "turbobase.sql-turbo-tool",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake SQL tool with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "twilkbilk.color-highlight-css",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake CSS color highlighter with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "vce-brendan-studio-eich.js-debuger-vscode",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake JS debugger (typosquat) with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
+  },
+  {
+    "ecosystem": "vscode",
+    "id": "yamaprolas.revature-labs-extension",
+    "severity": "critical",
+    "description": "GlassWorm v2 — fake Revature labs extension with hidden malware.",
+    "reference": "https://socket.dev/blog/open-vsx-transitive-glassworm-campaign"
   }
 ]
